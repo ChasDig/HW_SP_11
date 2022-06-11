@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по кандидатам</title>
+</head>
+<body>
+    <h1>Найдено кандидатов:</h1>
+    {% for buf in result %}
+        <p><a href="/candidate/{{buf['name'].strip('')}}.html">{{buf['name']}}</a></p>
+    {% endfor %}
+</body>
+</html>

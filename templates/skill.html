@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по навыкам6</title>
+</head>
+<body>
+    <h1>Найдено кандидатов с одинаковыми навыками - "{{skill_name}}":</h1>
+    {% for buf in result %}
+        <p><a href="/candidate/{{buf['name']}}.html/">{{buf['name']}}</a></p>
+    {% endfor %}
+</body>
+</html>
